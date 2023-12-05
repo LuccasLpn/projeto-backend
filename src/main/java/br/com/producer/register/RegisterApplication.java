@@ -1,4 +1,4 @@
-package br.com.register;
+package br.com.producer.register;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

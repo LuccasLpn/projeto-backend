@@ -1,7 +1,7 @@
-package br.com.register.modules.users.mapper;
+package br.com.producer.register.modules.users.mapper;
 
-import br.com.register.modules.users.entity.User;
-import br.com.register.modules.users.requests.UserCreatePostRequestBody;
+import br.com.producer.register.modules.users.entity.User;
+import br.com.producer.register.modules.users.requests.UserCreatePostRequestBody;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.factory.Mappers;

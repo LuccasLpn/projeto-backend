@@ -1,4 +1,4 @@
-package br.com.register.modules.users.entity;
+package br.com.producer.register.modules.users.entity;
 
 import lombok.*;
 

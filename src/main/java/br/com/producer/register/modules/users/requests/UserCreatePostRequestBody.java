@@ -1,4 +1,4 @@
-package br.com.register.modules.users.requests;
+package br.com.producer.register.modules.users.requests;
 
 import lombok.*;
 
