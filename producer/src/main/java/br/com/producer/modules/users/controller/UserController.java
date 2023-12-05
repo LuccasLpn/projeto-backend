@@ -1,8 +1,8 @@
-package br.com.producer.register.modules.users.controller;
+package br.com.producer.modules.users.controller;
 
-import br.com.producer.register.modules.users.requests.UserCreatePostRequestBody;
-import br.com.producer.register.modules.users.entity.User;
-import br.com.producer.register.modules.users.service.UserService;
+import br.com.producer.modules.users.requests.UserCreatePostRequestBody;
+import br.com.producer.modules.users.entity.User;
+import br.com.producer.modules.users.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

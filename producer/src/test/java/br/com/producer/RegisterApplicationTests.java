@@ -1,4 +1,4 @@
-package br.com.producer.register;
+package br.com.producer;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

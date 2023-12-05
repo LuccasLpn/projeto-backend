@@ -4,15 +4,9 @@ import br.com.consumer.consumer.modules.users.entity.User;
 import br.com.consumer.consumer.modules.users.repository.UserRepository;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
-import org.apache.kafka.clients.consumer.Consumer;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
-import org.apache.kafka.clients.consumer.ConsumerRecords;
 import org.springframework.kafka.annotation.KafkaListener;
-import org.springframework.kafka.support.Acknowledgment;
-import org.springframework.messaging.Message;
 import org.springframework.stereotype.Service;
-
-import java.time.Duration;
 
 @Service
 @RequiredArgsConstructor
@@ -30,4 +24,6 @@ public class UserService {
             throw new RuntimeException("User message error");
         }
     }
+
+
 }

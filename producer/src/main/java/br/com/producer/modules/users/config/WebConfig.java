@@ -1,4 +1,4 @@
-package br.com.producer.register.modules.users.config;
+package br.com.producer.modules.users.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;

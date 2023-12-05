@@ -1,4 +1,4 @@
-package br.com.producer.register.modules.users.entity;
+package br.com.producer.modules.users.entity;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.*;

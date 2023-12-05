@@ -1,4 +1,4 @@
-package br.com.producer.register.modules.users.requests;
+package br.com.producer.modules.users.requests;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;

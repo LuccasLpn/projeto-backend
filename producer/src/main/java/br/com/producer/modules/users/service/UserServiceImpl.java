@@ -1,8 +1,8 @@
-package br.com.producer.register.modules.users.service;
+package br.com.producer.modules.users.service;
 
-import br.com.producer.register.modules.users.entity.User;
-import br.com.producer.register.modules.users.mapper.UserMapper;
-import br.com.producer.register.modules.users.requests.UserCreatePostRequestBody;
+import br.com.producer.modules.users.requests.UserCreatePostRequestBody;
+import br.com.producer.modules.users.entity.User;
+import br.com.producer.modules.users.mapper.UserMapper;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
 import org.springframework.kafka.core.KafkaTemplate;
