@@ -1,0 +1,20 @@
+server:
+  error:
+    include-stacktrace: never
+  port: '8495'
+spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      enable-auto-commit: true
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+  datasource:
+    url: jdbc:postgresql://localhost:5432/projeto
+    username: luccas123
+    password: 123456
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
