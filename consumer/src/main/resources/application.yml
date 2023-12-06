@@ -16,5 +16,9 @@ spring:
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
-      ddl-auto: create
+      ddl-auto: none
     show-sql: true
+
+token:
+  signing:
+    key: 'Ji5VD2j7kFTNs9iMHpdtgPovr4G6eRHHqEjrKF1Zl5Gqa6O3YITcSvhulXbRi9UoIaFvH74zJKt0y7jTwWwVtAlFZLX9MGDbqC0vqAB6mM6AGKYp2LXnQ5xFy3VJtPfy3J'

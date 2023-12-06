@@ -9,7 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="consumer" />
       </profile>
-      <profile name="Annotation profile for register" enabled="true">
+      <profile name="Annotation profile for producer" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
@@ -18,13 +18,17 @@
           <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct/1.4.2.Final/mapstruct-1.4.2.Final.jar" />
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.30/lombok-1.18.30.jar" />
         </processorPath>
-        <module name="register" />
+        <module name="producer" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="register" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="consumer" options="-parameters" />
+      <module name="producer" options="-parameters" />
       <module name="register" options="-parameters" />
     </option>
   </component>

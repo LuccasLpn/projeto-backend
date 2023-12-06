@@ -3,6 +3,7 @@ package br.com.consumer.consumer.modules.users.service;
 import br.com.consumer.consumer.modules.users.entity.User;
 import br.com.consumer.consumer.modules.users.repository.UserRepository;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.springframework.kafka.annotation.KafkaListener;
@@ -16,6 +17,7 @@ public class UserService {
     private final ObjectMapper objectMapper;
 
     @KafkaListener(topics = {"user-topic"}, groupId = "1")
+    @Transactional
     public void consumerUser(ConsumerRecord<String, String> consumerRecord) {
         try {
             User user = objectMapper.readValue(consumerRecord.value(), User.class);
